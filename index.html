@@ -16,15 +16,17 @@
 </head>
 <body>
       
-  <section class="hero flex-col p-1">
-    <img src="img/intro-img.png" alt="Logo Graphic for ETRACH" width="400">
-    <h1 class="my-1">Welcome to the East Tennessee Relic and Coin Hunters Club</h1>
+  <section class="hero flex-col p-1" id="home">
+    <img src="img/intro-img.png" alt="Logo Graphic for ETRACH" class="hero-logo">
+    <div class="hero-intro my-1">
+      <h1 class="intro-message">Welcome to the East Tennessee Relic & Coin Hunters Club</h1>
+    </div>
     <p><em>Dedicated to preserving history one or more pieces at a time.</em></p>
     <nav class="my-2 py-2">
-      <a href="#" target="_blank" class="btn m-1">Facebook Group</a>
+      <a href="https://www.facebook.com/groups/825727047832962" target="_blank" class="btn m-1">Facebook Group</a>
       <a href="#" target="_blank" class="btn m-1">Our Mailing List</a>
       <a href="#" target="_blank" class="btn m-1">Membership Form</a>
-      <a href="#" target="_blank" class="btn m-1">View Club Photos</a>
+      <a href="https://wade-edwards.imgbb.com/albums" target="_blank" class="btn m-1">View Club Photos</a>
     </nav>
   </section>
 
@@ -39,8 +41,8 @@
       </figure>
     </header>
     <article class="my-2">  
-      <p>
-        Hello friends, and welcome to the <span class="text-bold">East Tennessee Relic & Coin Hunters Club.</span> We are a metal detecting community located in Knoxville, Tennessee and the surrounding areas. Our club is dedicated to preserving history one or more pieces at a time. We have been featured on the late news as well as the ABC Morning News. If you are interested in joining our club, ask us about a membership form.
+      <p class="observer-fade" data-intersection-target>
+        Hello friends, and welcome to the East Tennessee Relic & Coin Hunters Club. We are a metal detecting community located in Knoxville, Tennessee and the surrounding areas. Our club is dedicated to preserving history one or more pieces at a time. We have been featured on the late news as well as the ABC Morning News. If you are interested in joining our club, ask us about a membership form.
       </p>
     </article>
   </section>
@@ -95,7 +97,7 @@
       </figure>
     </header>
     <article class="my-2">
-      <p>
+      <p class="observer-fade" data-intersection-target>
         We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.” If you shop at Amazon please click on the link. You will be redirected to the Amazon site and any purchase you make will automatically generate a small amount for our club. This is completely free and adds no cost to the items you purchase.
       </p>
     </article>
@@ -107,24 +109,30 @@
     </h2>
     <form class="contact-form my-3" action="https://formsubmit.co/Coinhunter@charter.net" method="POST">
       <div class="flex-wrap my-2">
-        <div class="input-container mx-2">
+        <div class="input-container m-1">
           <label for="name">Name</label>
           <input type="text" name="name" required>
         </div>
-        <div class="input-container mx-2">
+        <div class="input-container m-1">
           <label for="email">Email</label>
           <input type="email" name="email" required>
         </div>
       </div>
-      <div class="input-container mx-2 my-2">
+      <div class="input-container m-1">
         <label for="subject">Subject</label>
         <input type="text" name="subject">
       </div>
-      <div class="input-container m-2">
+      <div class="input-container m-1">
         <label for="message">Message</label>
         <textarea name="message" rows="7" required></textarea>
-        <button type="submit" id="submit-btn" class="btn my-2">Send Message</button>
       </div>     
+      <div class="form-footer p-1">
+        <div>
+          <label for="file">Attach Membership Form:</label>
+          <input type="file" id="file" name="file">
+        </div>
+        <button type="submit" id="submit-btn" class="btn">Send Message</button>
+      </div>
     </form>
     <article class="my-3 flex-col">
       <h2 class="intersection-target_header" data-intersection-target>
@@ -135,8 +143,16 @@
         Community 
       </h2>
       <button class="btn my-2">Download Our Membership Form</button>
+      <img src="img/detector.webp" alt="Metal Detector lying in the grass" class="my-2">
     </article>
   </section>
+
+  <footer class="p-1">
+    <a href="#home">
+      <img src="https://fontmeme.com/permalink/230608/415b41fb7616eaa3e579e750ea50f5fa.png" alt="ETRACH">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </a>
+  </footer>
    
 
 

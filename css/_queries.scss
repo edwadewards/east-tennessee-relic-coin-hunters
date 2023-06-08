@@ -1,4 +1,18 @@
 @media (max-width: 1100px) {
+  .hero {
+    &-logo {
+      max-width: 300px;
+    }
+
+    .intro-message {
+      width: auto;
+    }
+
+    .intro-message::before,
+    .intro-message::after {
+      display: none;
+    }
+  }
   .home-content {
     header {
       figure {

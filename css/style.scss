@@ -28,11 +28,6 @@ a {
   text-decoration: none;
 }
 
-// img {
-//   max-width: 400px;
-// }
-
-
 h2 {
   font-size: clamp(.75rem, .75rem + .5vw, 1.2rem);
   text-transform: uppercase;
@@ -49,6 +44,10 @@ button, a, label {
   width: 100%;
   text-align: center;
 
+  &-logo {
+    max-width: 400px;
+  }
+
   nav {
     border-top: 1px solid $clr-dk;
     width: min(90%, 1100px);
@@ -56,6 +55,51 @@ button, a, label {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+.intro-message {
+  font-size: clamp(1.2rem, 1rem + .5vw, 1.5rem);
+  width: max-content;
+  position: relative;
+}
+
+.intro-message::before,
+.intro-message::after {
+  content: '';
+  position: absolute;
+}
+
+/* creating background to run across text */
+.intro-message::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  animation: typewriter 4s steps(56) 2s forwards;
+}
+
+/* creating blinking cursor */
+.intro-message::after {
+  top: 15%;
+  bottom: 15%;
+  left: 0;
+  width: 0.125em;
+  height: 70%;
+  background: black;
+  animation: typewriter 4s steps(56) 2s forwards, cursor 500ms steps(56) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes cursor {
+  to {
+    background: transparent;
   }
 }
 
@@ -97,7 +141,6 @@ button, a, label {
 }
 
 .gallery {
-
   header {
     text-align: center;
   }
@@ -192,9 +235,28 @@ button, a, label {
     input:focus, textarea:focus {
       border-bottom-color: $clr-primary;
     }
+
+    .form-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-family: $font-alt;
+
+      input {
+        border: none;
+      }
+    }
+  }
+
+  img {
+    width: min(95%, 800px);
+    max-height: 400px;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
   }
 }
-
 
 
 @import 'queries';
