@@ -1,4 +1,5 @@
 @import 'config';
+@import 'observers';
 
 *,
 *::before,
@@ -27,12 +28,15 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 400px;
-}
+// img {
+//   max-width: 400px;
+// }
 
-h2, h3 {
+
+h2 {
+  font-size: clamp(.75rem, .75rem + .5vw, 1.2rem);
   text-transform: uppercase;
+  margin: 0;
 }
 
 button, a, label {
@@ -61,23 +65,27 @@ button, a, label {
   header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100%;
-
-    h2 {
-      font-size: clamp(.85rem, .85rem + .5vw, 1.2rem);
-      margin: 0;
-    }
 
     figure {
       width: 100%;
-      height: 80vh;
+      // height: 80vh;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
 
       img {
         margin-left: auto;
+        margin-right: 8px;
+        width: 400px;
+        max-width: 100%;
+        transition: all 1s ease;
+      }
+
+      figcaption {
+        opacity: 0;
+        transition: opacity 1.5s .5s ease;
       }
     }
   }
@@ -93,7 +101,7 @@ button, a, label {
   header {
     text-align: center;
   }
-  
+
   .accordion {
     width: 1080px;
     height: 250px;

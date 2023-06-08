@@ -1,0 +1,30 @@
+figure.observed > [data-header-img] {width:100%;}
+figure.observed > [data-caption] {opacity: 1;}
+
+// .observed > .animate-underline {
+//   scale: 1;
+// }
+
+.intersection-target_header {
+  position: relative;
+  width: max-content;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.35rem;
+    height: .14rem;
+    width: 100%;
+    background-color: $clr-dk;
+    scale: 0;
+    transform-origin: left;
+    transition: scale 800ms ease;
+  }
+}
+
+h2.intersection-target_header.observed {
+  &::after {
+    scale: 1;
+  }
+}

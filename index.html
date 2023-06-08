@@ -16,8 +16,8 @@
 </head>
 <body>
       
-  <section class="hero flex-col">
-    <img src="img/intro-img.png" alt="Logo Graphic for ETRACH">
+  <section class="hero flex-col p-1">
+    <img src="img/intro-img.png" alt="Logo Graphic for ETRACH" width="400">
     <h1 class="my-1">Welcome to the East Tennessee Relic and Coin Hunters Club</h1>
     <p><em>Dedicated to preserving history one or more pieces at a time.</em></p>
     <nav class="my-2 py-2">
@@ -30,10 +30,10 @@
 
   <section class="home-content p-1 my-3">
     <header>
-      <h2><img src="img/location.webp" alt="location icon" height="22"> Anderson - Knox - Loudon - Roane - Grainger - Sevier</h2>
-      <figure data-intersection-target>
+      <h2 class="intersection-target_header" data-intersection-target><img src="img/location.webp" alt="location icon" height="22"> Anderson - Knox - Loudon - Roane - Grainger - Sevier</h2>
+      <figure class="my-2" data-intersection-target>
         <img src="img/ship.jpg" alt="photo of spanish ship" data-header-img>
-        <figcaption class="clr-dk">
+        <figcaption data-caption>
           <a href="https://www.facebook.com/photo/?fbid=10219660373934979&set=g.825727047832962" target="_blank" rel="noopener noreferrer">Read About Photo</a>
         </figcaption>
       </figure>
@@ -45,9 +45,9 @@
     </article>
   </section>
 
-  <section class="gallery flex-col my-5">
-    <header>
-      <h2 data-intersection-target>Featured Finds</h2>
+  <section class="gallery flex-col my-5 p-1">
+    <header class="flex-col">
+      <h2 class="intersection-target_header" data-intersection-target>Featured Finds</h2>
       <p class="my-1">Check out these awesome finds by members of our club!</p>
     </header>
     <div class="accordion my-3">
@@ -87,9 +87,9 @@
       <h2 class="intersection-target_header" data-intersection-target>
         A little support makes a lot of difference.
       </h2>
-      <figure data-intersection-target>
+      <figure class="my-2" data-intersection-target>
         <img src="img/Amazon-Logo-Black.webp" alt="amazon.com logo" data-header-img>
-        <figcaption class="clr-dk">
+        <figcaption data-caption>
           <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Amazon Home Page</a>
         </figcaption>
       </figure>
@@ -102,9 +102,9 @@
   </section>
 
   <section class="contact flex-col p-1" id="contact">
-    <h3>
+    <h2 class="intersection-target_header" data-intersection-target>
       Questions? Comments? Get in touch.
-    </h3>
+    </h2>
     <form class="contact-form my-3" action="https://formsubmit.co/Coinhunter@charter.net" method="POST">
       <div class="flex-wrap my-2">
         <div class="input-container mx-2">
@@ -127,13 +127,13 @@
       </div>     
     </form>
     <article class="my-3 flex-col">
-      <h3>
+      <h2 class="intersection-target_header" data-intersection-target>
         Adventure 
         <i class="fa-solid fa-anchor"></i> 
         Exploration 
         <i class="fa-solid fa-anchor"></i> 
         Community 
-      </h3>
+      </h2>
       <button class="btn my-2">Download Our Membership Form</button>
     </article>
   </section>
