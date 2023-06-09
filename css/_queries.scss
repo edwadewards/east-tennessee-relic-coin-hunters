@@ -17,7 +17,7 @@
         }
 
         figcaption {
-          top: 140px;
+          top: 120px;
         }
       }
     }
@@ -72,5 +72,11 @@
     &::after {
       display: none;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .observer-fade {
+    opacity: 1 !important;
   }
 }
