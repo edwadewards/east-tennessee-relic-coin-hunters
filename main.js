@@ -5,7 +5,7 @@ const intersectionTarget = document.querySelectorAll('[data-intersection-target]
 const options = {
   root: null,
   threshold: 1,
-  rootMargin: "-10px" 
+  rootMargin: "0px" 
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {
@@ -20,4 +20,13 @@ const observer = new IntersectionObserver(function(entries, observer) {
 
 intersectionTarget.forEach(el => {
   observer.observe(el);
+});
+
+
+const submit = document.querySelector('.btn-submit');
+const success = document.querySelector('.success-animation');
+
+submit.addEventListener('click', () => {
+  submit.style.display = 'none';
+  success.style.display = 'inline-block';
 });
