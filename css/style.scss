@@ -16,6 +16,7 @@ body {
   color: $clr-dk;
   font-family: $font-primary;
   font-weight: bold;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -29,9 +30,17 @@ a {
 }
 
 h2 {
-  font-size: clamp(.75rem, .75rem + .5vw, 1.2rem);
+  font-size: clamp(.9rem, .9rem + .25vw, 1.2rem);
   text-transform: uppercase;
   margin: 0;
+}
+
+p {
+  font-size: clamp(.75rem, .75rem + .5vw, 1.25rem);
+}
+
+article {
+  text-align: center;
 }
 
 button, a, label {
@@ -54,12 +63,16 @@ button, a, label {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: .6rem;
+
+    a {
+      min-width: 26ch;
+    }
   }
 }
 
 .intro-message {
-  font-size: clamp(1.2rem, 1rem + .5vw, 1.5rem);
+  font-size: clamp(1rem, 1rem + .5vw, 1.5rem);
   width: max-content;
   position: relative;
 }
@@ -121,7 +134,7 @@ button, a, label {
 
       img {
         margin-left: auto;
-        margin-right: 8px;
+        // margin-right: 8px;
         width: 400px;
         max-width: 100%;
         transition: all 1s ease;
@@ -132,11 +145,6 @@ button, a, label {
         transition: opacity 1.5s .5s ease;
       }
     }
-  }
-
-  article {
-    text-align: center;
-    font-size: clamp(.8rem, .8rem + 1vw, 1.25rem);
   }
 }
 
@@ -203,10 +211,6 @@ button, a, label {
 
 .contact {
   width: 100%;
-
-  h3 {
-    font-size: clamp(1rem, 1rem + .5vw, 1.65rem);
-  }
 
   .contact-form {
     width: min(100%, 900px);
