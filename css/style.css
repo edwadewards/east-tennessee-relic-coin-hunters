@@ -224,6 +224,59 @@ button, a, label {
   font-family: "Source Code Pro", monospace;
 }
 
+.scroll-container {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #051b96;
+  padding: 5px 0;
+  scale: 0;
+  transform-origin: right;
+  transition: scale 0.7s ease;
+}
+
+.scroll-track {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border-top: 1px solid #fffefc;
+  border-bottom: 1px solid #fffefc;
+  color: #fffefc;
+}
+.scroll-track .scroll {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  /* Starting position */
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  animation: scroll-left 25s linear infinite;
+}
+.scroll-track .scroll:hover {
+  animation-play-state: paused;
+}
+.scroll-track .scroll li {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+.scroll-track .scroll .new-line {
+  margin: 0 3rem 0 5rem;
+}
+@keyframes scroll-left {
+  0% { /* Browser bug fix */ /* Browser bug fix */
+    transform: translateX(100%);
+  }
+  100% { /* Browser bug fix */ /* Browser bug fix */
+    transform: translateX(-100%);
+  }
+}
 .hero {
   height: 100vh;
   width: 100%;
@@ -466,6 +519,13 @@ button, a, label {
     box-shadow: inset 0px 0px 0px 30px #4bb71b;
   }
 }
+footer {
+  border-top: 1px solid #1a1917;
+  width: 180px;
+  display: grid;
+  place-items: center;
+}
+
 @media (max-width: 1180px) {
   .gallery .accordion {
     height: 90vh;

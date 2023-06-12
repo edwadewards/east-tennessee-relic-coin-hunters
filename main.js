@@ -30,3 +30,10 @@ submit.addEventListener('click', () => {
   submit.style.display = 'none';
   success.style.display = 'inline-block';
 });
+
+
+const scroller = document.querySelector('.scroll-container');
+
+window.addEventListener('scroll', () => {
+  scroller.style.scale = '1';
+});
