@@ -18,8 +18,8 @@ Professional experience! Creating a fully functional site to be used by others i
 
 ## :chart_with_upwards_trend: Site Performance
 
-![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insight_etrach-mobile.png)
-![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insight_etrach-desktop.png)
+![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insights_etrach-mobile.png)
+![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insights_etrach-desktop.png)
 
 Data from :link: [PageSpeed Insights](https://pagespeed.web.dev/)
 
