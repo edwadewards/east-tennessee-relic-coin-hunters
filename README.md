@@ -21,6 +21,6 @@ Professional experience! Creating a fully functional site to be used by others i
 ![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insight_etrach-mobile.png)
 ![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insight_etrach-desktop.png)
 
-Data from ![PageSpeed Insights](https://pagespeed.web.dev/)
+Data from :link: [PageSpeed Insights](https://pagespeed.web.dev/)
 
 ![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/etrach.gif)
