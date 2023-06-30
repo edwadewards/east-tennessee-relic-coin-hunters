@@ -16,4 +16,11 @@ My first coding job! I created this site from scratch for a metal detecting club
 
 Professional experience! Creating a fully functional site to be used by others is the reason I enjoy web development.  
 
+## :chart_with_upwards_trend: Site Performance
+
+![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insight_etrach-mobile)
+![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/insight_etrach-desktop)
+
+Data from ![PageSpeed Insights](https://pagespeed.web.dev/)
+
 ![](https://github.com/edwadewards/east-tennessee-relic-coin-hunters/blob/main/etrach.gif)
